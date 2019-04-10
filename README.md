@@ -1,2 +1,2 @@
 # RedesChatbot
-Rule-based Chatbot using python and django
+Rule-based Chatbot using django
