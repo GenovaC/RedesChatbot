@@ -25,7 +25,7 @@ SECRET_KEY = 'ynwu)(9rw==hv9)mfdw$9*9-4vhz6^r9=4ida8xkgcp+&g+%)!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.lnldrugs.com' , '127.0.0.1' , 'localhost' , '192.168.0.50' , 'lnldrugs.com']
 
 
 # Application definition
