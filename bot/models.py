@@ -7,11 +7,11 @@ class Question(models.Model):
         return self.question_text
 
 
-class Choice(models.Model):
+class Answer(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    choice_text = models.CharField(max_length=200)
+    answer_text = models.CharField(max_length=200)
     def __str__(self):
-        return self.choice_text
+        return self.answer_text
 
 class Reflection(models.Model):
     first_person = models.CharField(max_length=200)
