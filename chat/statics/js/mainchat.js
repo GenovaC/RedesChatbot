@@ -2,6 +2,7 @@ $(function () {
 
 
     var message = $('#chat-message');
+    var pregunta = true;
     var li_ini = "<li class=\"right clearfix\">";
     var span_ini = "<span class=\"chat-img pull-right\">";
     var img = "<img src=\"http://placehold.it/50/FA6F57/fff&text=V\" alt=\"User Avatar\" class=\"img-circle\" />";
@@ -21,6 +22,7 @@ $(function () {
 
             $("#chat").append(enviar);
             message.val('');
+            pregunta = true;
         }
     });
 
