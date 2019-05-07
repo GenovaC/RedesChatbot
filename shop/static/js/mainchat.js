@@ -20,10 +20,33 @@ $(function () {
             strong + "</div>" +"<p>" + message.val() +"</p>" + "</div> </li>"
 
             $("#chat").append(enviar);
+            consumo(message.val());
             message.val('');
+
         }
     });
 
 
 
 });
+
+
+function consumo(msg){
+    var li_ini = "<li class=\"right clearfix\">";
+    var span_ini = "<span class=\"chat-img pull-right\">";
+    var img = "<img src=\"http://placehold.it/50/FA6F57/fff&text=V\" alt=\"User Avatar\" class=\"img-circle\" />";
+    //Cierra span
+    var div1 = "<div class=\"chat-body clearfix\">";
+    var div2 = "<div class=\"header\">";
+    var strong = "<strong class=\"pull-right primary-font\">Visitante</strong>";
+    //cierra div
+
+    fetch('http://127.0.0.1:3333/prueba/' + msg)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+      });
+
+};
